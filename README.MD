@@ -7,7 +7,6 @@ This repo contains an HTML/CSS/JavaScript website that utilizes the [Zoom Meetin
 
 Requirements:
 * Nodejs
-* Docker (optional)
 
 ____
 
@@ -91,7 +90,7 @@ await page.goto("{Enter local development url or site url}", {
    npm run start
   ```
 
-1. Meeting Bot should enter the meeting as a participant and request recording permission
+1. Meeting bot should enter the meeting as a participant and request recording permission.
 
 
 ## Need help?
