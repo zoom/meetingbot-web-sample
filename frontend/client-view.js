@@ -18,10 +18,6 @@ var url = 'Enter your Meeting Invite URL';
 
 var {meetingNumber, password} = getMeetingNumberAndPasswordFromUrl(url)
 
-  
-console.log('Meeting Number:', meetingNumber);
-console.log('Password:', password);
-
 // API Response data from the backend server.js ~ MAKE DYNAMIC
 var meetingNumber = meetingNumber;
 var passWord = password;
@@ -31,7 +27,6 @@ var role = 0; // 1 for host; 0 for attendee or webinar
 var userName = "{Enter Name}'s Bot";
 
 var getlocalRecordingToken = "";
-var getMSDKAuthSig = "";
 
 var registrantToken = ''
 var zakToken = ''
