@@ -1,5 +1,5 @@
 
-# Zoom Meeting SDK JavaScript sample
+# Zoom Meeting Bot JavaScript sample
 
 Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/en/legal/zoom-api-license-and-tou/).
 
@@ -18,8 +18,9 @@ To get started, clone the repo : https://github.com/zoom/meetingsdk-web-bot-samp
 ## Setup
 
 1. Once cloned, navigate to the meetingsdk-sample-javascript directory:
-
+```
 $ cd meetingsdk-web-bot-sample-javascript
+```
 
 2. Then install the dependencies:
 ```
@@ -67,15 +68,13 @@ $ touch .env
 
 
 7. Start the server:
-
-
 ```
 npm run start
 ```
 
 ## Usage
 
-1. Enter Meeting Number and Password in index.html 
+1. Enter Meeting SDK credentials values in index.html 
 
 2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)) and click "Join Meeting".
 
