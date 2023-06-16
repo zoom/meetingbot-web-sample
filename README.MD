@@ -76,7 +76,7 @@ npm run start
 
 1. Enter Meeting SDK credentials values in index.html 
 
-2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)) and click "Join Meeting".
+2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server))
 
 3. In terminal, run node : npm run start
 
