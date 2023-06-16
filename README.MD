@@ -86,12 +86,12 @@ await page.goto("{Enter local development url or site url}", {
 
   });
 ```
-4. In terminal, run node : 
+1. In terminal run : 
   ```bash
    npm run start
   ```
 
-5. Meeting Bot should enter the meeting as a participant and request recording permission
+1. Meeting Bot should enter the meeting as a participant and request recording permission
 
 
 ## Need help?
