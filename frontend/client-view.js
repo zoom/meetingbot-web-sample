@@ -18,7 +18,7 @@ var url = 'Enter your Meeting Invite URL';
 
 var {meetingNumber, password} = getMeetingNumberAndPasswordFromUrl(url)
 
-// API Response data from the backend server.js ~ MAKE DYNAMIC
+// API Response data from the backend server.js
 var meetingNumber = meetingNumber;
 var passWord = password;
 
@@ -30,7 +30,7 @@ var getlocalRecordingToken = "";
 
 var registrantToken = ''
 var zakToken = ''
-var leaveUrl = 'http://127.0.0.1:5501/frontend/'
+var leaveUrl = 'ENTER YOUR LEAVE URL HERE'
 
 
 

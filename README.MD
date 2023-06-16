@@ -18,17 +18,17 @@ To get started, clone the repo : https://github.com/zoom/meetingsdk-web-bot-samp
 ## Setup
 
 1. Once cloned, navigate to the meetingsdk-sample-javascript directory:
-```
+```bash
 $ cd meetingsdk-web-bot-sample-javascript
 ```
 
 2. Then install the dependencies:
-```
+```bash
 $ npm install
 ```
 3. Create an environment file to store your Meeting SDK credentials:
 
-```
+```bash
 $ touch .env
 
 ```
@@ -68,7 +68,7 @@ $ touch .env
 
 
 7. Start the server:
-```
+```bash
 npm run start
 ```
 
@@ -78,9 +78,20 @@ npm run start
 
 2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)).
 
-3. In terminal, run node : npm run start
+3. In backend/helpers/meetingBot.js, enter local development url or site url. 
+```js
+await page.goto("{Enter local development url or site url}", {
+    waitUntil: "load",
 
-4. Meeting Bot should enter the meeting as a participant and request recording permission
+
+  });
+```
+4. In terminal, run node : 
+  ```bash
+   npm run start
+  ```
+
+5. Meeting Bot should enter the meeting as a participant and request recording permission
 
 
 ## Need help?
