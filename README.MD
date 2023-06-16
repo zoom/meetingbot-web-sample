@@ -3,21 +3,10 @@
 
 Use of this sample app is subject to our [Terms of Use](https://explore.zoom.us/en/legal/zoom-api-license-and-tou/).
 
-This repo contains an HTML/CSS/JavaScript website that utilizes the [Zoom Meeting SDK](https://developers.zoom.us/docs/meeting-sdk/web/) with a Node.js Express backend and the Chrome Headless browser to join Zoom meetings and request recording permission. The frontend is built with Vanilla JS to demonstrate the capabilities of headless browsers for bot development. It also serves as reference implementation for:
-
-* Headless MeetingBot Join Meeting & Computer Audio Flow 
-* Generate Metting SDK JWT Signature from the backend
-* Zoom OAuth access token request
-* Zoom REST API calls and retrieving user information
-  * Get User Meeting Detail
-  * Request permission as participant to record
-
-Tech stack: js, node.js, express, docker (optional)
-
-____
+This repo contains an HTML/CSS/JavaScript website that utilizes the [Zoom Meeting SDK](https://developers.zoom.us/docs/meeting-sdk/web/) with a Node.js Express backend and the Chrome Headless browser to join Zoom meetings and request recording permission as a participant. The frontend is built with Vanilla JS to demonstrate the capabilities of headless browsers for bot development. 
 
 Requirements:
-* Node
+* Nodejs
 * Docker (optional)
 
 ____
@@ -86,29 +75,14 @@ npm run start
 
 ## Usage
 
-1. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)) and click "Join Meeting".
+1. Enter Meeting Number and Password in index.html 
 
-2. Join Meeting Via Client
+2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)) and click "Join Meeting".
 
 3. In terminal, run node : npm run start
 
 4. Meeting Bot should enter Meeting
 
-# Self-signed certificate 
-
-With every launch on Mac OS, the Firewall setting causes mac os to ask the following question: "Do you want to the application Chromium.app to accept incoming network connections?" To resolve on Mac, you will need to self-signed certificate with following command: 
-
-global chromium
-```
-sudo codesign --force --deep --sign - ~/Library/Caches/ms-playwright/chromium-*/chrome-mac/Chromium.app
-
-```
-Local project chromium
-
-```
-sudo codesign --force --deep --sign - ./node_modules/puppeteer/.local-chromium/mac-*/chrome-mac/Chromium.app
-
-```
 
 ## Need help?
 
