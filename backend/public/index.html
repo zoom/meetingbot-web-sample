@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Zoom Websocket</title>
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Static Rendering As Expected But not the Get Route -->
+    <!-- <link  rel="stylesheet"  href="./css/style.css"> -->
+
+    <title>WebSocket Hub</title>
+  </head>
+
+  <body>
+    <!-- CONTENT -->
+    <section id="content">
+
+      <!-- MAIN -->
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Zoom Events Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Dashboard</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class='bx bxs-calendar-heart'></i>
+            <span class="text">
+              <h3 id="webSocketcounter">0</h3>
+              <p>Heart Beat Counter</p>
+            </span>
+          </li>
+          
+          
+        </ul>
+
+
+        <!-- Recent Events TABLE -->
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Recent Events</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            <table id="event-data">
+              <thead>
+                <tr>
+                  <th>Event type</th>
+                  <th>User ID</th>
+                  <th>Meeting ID</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                 <!-- Removed Placeholder Data -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- Recent Events TABLE -->
+
+          <!-- Heartbeats TABLE -->
+         
+        <div class="todo">
+          <div class="order">
+            <div class="head">
+              <h3>Participant Data</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            <table id="event-data">
+              <thead>
+                <tr>
+                  <th>User ID</th>
+                  <th>Participant User ID</th>
+                  <th>Join Time</th>
+                </tr>
+              </thead>
+              <tbody id="heartbeats">
+                
+              </tbody>
+            </table>
+          </div>
+        <!-- Heartbeats TABLE -->
+      </main>
+      <!-- MAIN -->
+    </section>
+
+    <!-- CONTENT -->
+
+    <script>
+      var exampleSocket = new WebSocket(
+        "wss://ws.zoom.us/ws?subscriptionId=JVcwQpcpS1GqNtkp5YBv_g&access_token=" +`${access_token}` );
+    </script>
+
+    <script src="/ws.js"></script>
+  </body>
+</html>
