@@ -76,11 +76,11 @@ npm run start
 
 1. Enter Meeting SDK credentials values in index.html 
 
-2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server))
+2. Navigate to index.html in your browser ([or serve over localhost](https://www.npmjs.com/package/http-server)).
 
 3. In terminal, run node : npm run start
 
-4. Meeting Bot should enter Meeting
+4. Meeting Bot should enter the meeting as a participant and request recording permission
 
 
 ## Need help?

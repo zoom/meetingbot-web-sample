@@ -11,9 +11,9 @@ var authEndpoint = "http://localhost:30015/api/zoom/msig";
 var zakEndpoint = "http://localhost:30015/api/zoom/hzak";
 var meetingDetailsEndpoint = "http://localhost:30015/api/zoom/mnum";
 
-var sdkKey = "4ASmoeC9qV2BAcj8XFNPD9GK9uTrg60582Fm";
+var sdkKey = "Enter your SDK Key";
 
-var url = 'https://pooja-onelogin-test.zoom.us/j/93798938565?pwd=TmszVVlmMTRSWVp4ZVFmRzVkMWFGZz09';
+var url = 'Enter your Meeting Invite URL';
 
 
 var {meetingNumber, password} = getMeetingNumberAndPasswordFromUrl(url)
@@ -28,7 +28,7 @@ var passWord = password;
 
 // -----------------------------------
 var role = 0; // 1 for host; 0 for attendee or webinar
-var userName = "Donte's Bot";
+var userName = "{Enter Name}'s Bot";
 
 var getlocalRecordingToken = "";
 var getMSDKAuthSig = "";
@@ -141,7 +141,6 @@ function handleJoinSuccess(success) {
   console.log(success, 'join meeting success');
 
   // Not working has expected!
-  
    handleJoinAudioClick();
    handleDisableVideoClick();
 
@@ -173,9 +172,9 @@ function handleMediaCapturePermissionSuccess(success) {
     startMediaCapture();
     console.log('Media capture permission changed to ALLOW');
   } else {
-    // stopMediaCapture();
+    stopMediaCapture();
     console.log('Media capture permission changed to DENY');
-    // leaveMeetingAndHandleError();
+    leaveMeetingAndHandleError();
   }
 }
 
