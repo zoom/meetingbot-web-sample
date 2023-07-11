@@ -25,7 +25,7 @@ $ cd meetingsdk-web-bot-sample-javascript
 ```bash
 $ npm install
 ```
-3. Copy .env.example to store your Meeting SDK credentials:
+3. Copy .env.example and fill out the required values:
 
 ```bash
 $ cp .env.example .env
