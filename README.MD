@@ -25,14 +25,13 @@ $ cd meetingsdk-web-bot-sample-javascript
 ```bash
 $ npm install
 ```
-3. Create an environment file to store your Meeting SDK credentials:
+3. Copy .env.example to store your Meeting SDK credentials:
 
 ```bash
-$ touch .env
-
+$ cp .env.example .env
 ```
 
-4. In the frondend directory, open the client-view.js file, and enter values for the variables:
+4. In the frontend directory, open the client-view.js file, and enter values for the variables:
 
 
    | Variable                   | Description |
