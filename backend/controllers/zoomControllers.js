@@ -87,7 +87,9 @@ const getMeetingDetails = asyncHandler(async (req, res) => {
     // Make a request to the Zoom API to get the meeting details and ZAK token
     // const meetingDetails =  await makeZoomAPIRequest("GET", "https://api.zoom.us/v2/users/me/token?type=zak")
 
-    res.status(201).json({ id: "94992962195", passWord: "371741" });
+  const { ZOOM_MEETING_ID, ZOOM_MEETING_PW } = process.env
+
+    res.status(201).json({ id: ZOOM_MEETING_ID, passWord: ZOOM_MEETING_PW });
   } catch (error) {
     res.status(400);
     throw new Error(error);
