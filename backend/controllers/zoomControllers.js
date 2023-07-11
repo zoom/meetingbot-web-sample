@@ -21,7 +21,7 @@ const handleGetMeetingDetails = async (meetingNumber) => {
   );
   const getUserZakToken = await makeZoomAPIRequest(
     "GET",
-    "https://api.zoom.us/v2/users/donte.zoomie@gmail.com/token?type=zak"
+    "https://api.zoom.us/v2/users/me/token?type=zak"
   );
 
   // Get firstName,  and PassWord from response body
@@ -85,7 +85,7 @@ const generateSDKSignature = asyncHandler(async (req, res) => {
 const getMeetingDetails = asyncHandler(async (req, res) => {
   try {
     // Make a request to the Zoom API to get the meeting details and ZAK token
-    // const meetingDetails =  await makeZoomAPIRequest("GET", "https://api.zoom.us/v2/users/donte.zoomie@gmail.com/token?type=zak")
+    // const meetingDetails =  await makeZoomAPIRequest("GET", "https://api.zoom.us/v2/users/me/token?type=zak")
 
     res.status(201).json({ id: "94992962195", passWord: "371741" });
   } catch (error) {
@@ -98,7 +98,7 @@ const getHostZAKToken = asyncHandler(async (req, res) => {
   try {
     const { token } = await makeZoomAPIRequest(
       "GET",
-      "https://api.zoom.us/v2/users/donte.zoomie@gmail.com/token?type=zak"
+      "https://api.zoom.us/v2/users/me/token?type=zak"
     );
 
     res.status(201).json({ token });
